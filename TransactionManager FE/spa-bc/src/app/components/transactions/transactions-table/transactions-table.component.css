@@ -1,0 +1,12 @@
+td {
+  background-color: transparent !important;
+ }
+
+ tr {
+  background-color: #DDDDDD !important;
+ }
+
+ tr:hover {
+  background-color: #B2B2B2 !important;
+  cursor: pointer;
+ }

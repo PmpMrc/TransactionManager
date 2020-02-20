@@ -1,0 +1,20 @@
+.alert-section {
+  width: 600px;
+  height: 60px;
+}
+
+.error {
+  border-left: 6px solid red !important;
+  background-color: #f79090;
+}
+
+.success {
+  border-left: 6px solid green !important;
+  background-color: #76e276;
+}
+
+.middle-text {
+  padding-top: 20px;
+  padding-left: 20px;
+  vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+<div class="jumbotron jumbotron-fluid card">
+  <div class="centered">
+    <h2>INSERIMENTO TRANSAZIONE</h2>
+  </div>
+  <div>
+    <div class="blank-row"></div>
+    <div class="row no-gutters">
+      <div class="col-sm-1 col-md-1 col-lg-1"></div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        VALORE
+          <input type="number" step="0.01" min="0" [(ngModel)] = "valore">
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2"></div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        DATA
+         <input type="date" [(ngModel)] = "data">
+      </div>
+      <div class="col-sm-1 col-md-1 col-lg-1"></div>
+    </div>
+  </div>
+  <div class="blank-row"></div>
+  <p class="centered">
+    <a class="btn btn-bc btn-lg" (click) = "saveTransaction()" role="button">SALVA</a>
+  </p>
+</div>

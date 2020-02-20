@@ -1,0 +1,7 @@
+<div class = "alert-section error" *ngIf = "errorSection">
+  <p class = "middle-text">{{message}}</p>
+</div>
+<div class = "alert-section success" *ngIf = "successSection">
+  <p class = "middle-text">{{message}}</p>
+</div>
+<div class="blank-row" *ngIf = "errorSection || successSection" ></div>

@@ -1,0 +1,28 @@
+<app-alert-section></app-alert-section>
+<div class="title-head">
+  GESTIONE UTENTI
+</div>
+<div class="subtitle">
+  Per inserire un nuovo utente, cliccare sul bottone 'Nuovo Inserimento'. Per visualizzare il dettaglio di un utente, cliccare sul record in tabella.
+</div>
+<div class="row no-gutters">
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <div class="padded">
+      <a a class="btn btn-bc btn-lg" role="button"(click) = "showInsertSection()">Nuovo inserimento</a>
+      <app-users-table [users] = "users" (selected) = "showDetailSection($event)"></app-users-table>
+    </div>
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2"></div>
+  <div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="blank-row"></div>
+    <div *ngIf="showInsert">
+      <app-users-insert (saved)="insertUser($event)"></app-users-insert>
+    </div>
+    <div *ngIf="showDetail">
+      <app-users-detail (modified)="updateUser($event)" (deleted)="deleteUser($event)" [user] = "userSelected"></app-users-detail>
+    </div>
+  </div>
+  <div class="col-sm-1 col-md-1 col-lg-1"></div>
+</div>
+
+

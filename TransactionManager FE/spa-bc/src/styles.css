@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+.centered {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.vertical-centered {
+  padding-top: 50px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lena', serif !important;
+  color: #000000;
+  background: #F2F2F2;
+ }
+
+ .card {
+   background: #B2B2B2 !important;
+ }
+
+ .btn-bc {
+   background: #333333;
+   color: white;
+ }
+
+ .font-card {
+   font-size: 15px !important;
+ }
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+ th, td {
+  padding: 15px;
+  text-align: left;
+  font-size: large;
+}
+
+ th {
+  background-color: #666666;
+  color: white;
+ }
+
+ td {
+  background-color: #DDDDDD;
+ }
+
+ table.table-bordered{
+  border:1px solid black;
+  margin-top:20px;
+}
+
+table.table-bordered > thead > tr > th{
+  border:1px solid black;
+}
+
+table.table-bordered > tbody > tr > td{
+  border:1px solid black;
+}
+
+.padded {
+  padding: 15px;
+}
+
+.title-head {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Lena', serif !important;
+}
+
+.subtitle {
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Lena', serif !important;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+}
+
+
+select {
+  font-size: larger !important;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+}
+
+
+.blank-row {
+  height: 20px;
+}
+

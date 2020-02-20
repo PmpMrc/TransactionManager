@@ -1,0 +1,17 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Utenti</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="users != undefined && users.length > 0">
+    <tr *ngFor="let user of users; let i = index">
+      <td (click) = 'selectedUser(i)'>{{user.name}} {{user.surname}}</td>
+    </tr>
+  </tbody>
+  <tbody *ngIf="users != undefined && users.length == 0">
+    <tr>
+      <td>Nessun utente presente</td>
+    </tr>
+  </tbody>
+</table>
